@@ -110,19 +110,19 @@
 		<crew>
 			<CrewGroup moduleName="Crew_Quarters_Group">
 				<potableWaterConsumer inputs="Potable_Water_Store"
-					desiredFlowRates="3" maxFlowRates="3"/>
+					desiredFlowRates="12" maxFlowRates="12"/>
 				<airConsumer inputs="Crew_Quarters" desiredFlowRates="0"
 					maxFlowRates="0" />
-				<foodConsumer inputs="Food_Store" desiredFlowRates="5"
-					maxFlowRates="5"/>
-				<dirtyWaterProducer desiredFlowRates="100"
-					outputs="Dirty_Water_Store" maxFlowRates="100"/>
-				<greyWaterProducer desiredFlowRates="100"
-					outputs="Grey_Water_Store" maxFlowRates="100" />
+				<foodConsumer inputs="Food_Store" desiredFlowRates="60"
+					maxFlowRates="60"/>
+				<dirtyWaterProducer desiredFlowRates="1200"
+					outputs="Dirty_Water_Store" maxFlowRates="1200"/>
+				<greyWaterProducer desiredFlowRates="1200"
+					outputs="Grey_Water_Store" maxFlowRates="1200" />
 				<airProducer desiredFlowRates="0"
 					outputs="Crew_Quarters" maxFlowRates="0" />
-				<dryWasteProducer desiredFlowRates="10"
-					outputs="Dry_Waste_Store" maxFlowRates="10"/>
+				<dryWasteProducer desiredFlowRates="120"
+					outputs="Dry_Waste_Store" maxFlowRates="120"/>
 				<crewPerson name="Engineer 1" age="40" weight="79" sex="MALE">
 					<schedule>
 						<activity name="sleep" length="8" intensity="1" />
