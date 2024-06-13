@@ -21,8 +21,9 @@
 				<greyWaterProducer outputs="Grey_Water_Store" desiredFlowRates="10" maxFlowRates="10"/>
 				<airConsumer inputs="Crew_Quarters" desiredFlowRates="1000" maxFlowRates="1000"/>
 				<airProducer outputs="Crew_Quarters" desiredFlowRates="1000" maxFlowRates="1000"/>
-				<CO2Producer outputs="CO2_Store" desiredFlowRates="1000" maxFlowRates="1000"/>
+				<CO2Comsumer inputs="CO2_Store" desiredFlowRates="1000" maxFlowRates="1000"/>
 			</CDRS>
+			
 			<OGS moduleName="OGS">
 				<powerConsumer inputs="General_Power_Store" desiredFlowRates="1000" maxFlowRates="1000"/>
 				<potableWaterConsumer inputs="Potable_Water_Store" desiredFlowRates="10" maxFlowRates="10"/>
