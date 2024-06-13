@@ -288,383 +288,150 @@
 				moduleName="Dry_Waste_Store" level="0">
 			</DryWasteStore>
 		</waste>
-		
 		<crew>
 			<CrewGroup moduleName="Crew_Quarters_Group">
 				<potableWaterConsumer inputs="Potable_Water_Store"
-					desiredFlowRates="3" maxFlowRates="3"/>
+					desiredFlowRates="3" maxFlowRates="3">
+				</potableWaterConsumer>
 				<airConsumer inputs="Crew_Quarters" desiredFlowRates="0"
 					maxFlowRates="0" />
 				<foodConsumer inputs="Food_Store" desiredFlowRates="5"
-					maxFlowRates="5"/>
+					maxFlowRates="5">
+				</foodConsumer>
 				<dirtyWaterProducer desiredFlowRates="100"
-					outputs="Dirty_Water_Store" maxFlowRates="100"/>
+					outputs="Dirty_Water_Store" maxFlowRates="100">
+				</dirtyWaterProducer>
 				<greyWaterProducer desiredFlowRates="100"
 					outputs="Grey_Water_Store" maxFlowRates="100" />
 				<airProducer desiredFlowRates="0"
 					outputs="Crew_Quarters" maxFlowRates="0" />
 				<dryWasteProducer desiredFlowRates="10"
-					outputs="Dry_Waste_Store" maxFlowRates="10"/>
-				<crewPerson name="Engineer 1" age="40" weight="79" sex="MALE">
+					outputs="Dry_Waste_Store" maxFlowRates="10">
+				</dryWasteProducer>
+				<crewPerson age="35" name="Buck Rogers" sex="MALE"
+					weight="75">
 					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="7.5"
-							intensity="2" />
-						<activity name="standing" length="3"
-							intensity="2.5" />
-						<activity name="walking" length="3"
-							intensity="3" />
-						<activity name="work" length="2"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
+						<activity intensity="2" name="ruminating"
+							length="12" />
+						<activity intensity="0" name="sleep" length="8" />
+						<activity intensity="5" name="excercise"
+							length="2" /><activity intensity="4" name="EVA"
+							length="2" xsi:type="EVAActivityType" evaCrewGroup="EVA_Crew_Group" />
 					</schedule>
 				</crewPerson>
-				<crewPerson name="Engineer 2" age="40" weight="63" sex="FEMALE">
+			</CrewGroup>
+			<CrewGroup moduleName="Galley_Group">
+				<potableWaterConsumer inputs="Potable_Water_Store"
+					desiredFlowRates="3" maxFlowRates="3">
+				</potableWaterConsumer>
+				<airConsumer inputs="Galley" desiredFlowRates="0"
+					maxFlowRates="0" />
+				<foodConsumer inputs="Food_Store" desiredFlowRates="5"
+					maxFlowRates="5">
+				</foodConsumer>
+				<dirtyWaterProducer desiredFlowRates="100"
+					outputs="Dirty_Water_Store" maxFlowRates="100">
+				</dirtyWaterProducer>
+				<greyWaterProducer desiredFlowRates="100"
+					outputs="Grey_Water_Store" maxFlowRates="100" />
+				<airProducer desiredFlowRates="0" outputs="Galley"
+					maxFlowRates="0" />
+				<dryWasteProducer desiredFlowRates="10"
+					outputs="Dry_Waste_Store" maxFlowRates="10">
+				</dryWasteProducer>
+				<crewPerson age="35" name="Wilma Deering" sex="FEMALE"
+					weight="55">
 					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="7.5"
-							intensity="2" />
-						<activity name="standing" length="3"
-							intensity="2.5" />
-						<activity name="walking" length="3"
-							intensity="3" />
-						<activity name="work" length="2"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
+						<activity intensity="2" name="ruminating"
+							length="12" />
+						<activity intensity="0" name="sleep" length="8" />
+						<activity intensity="5" name="excercise"
+							length="2" />
+						<activity intensity="5" name="excercise"
+							length="2" /><activity intensity="4" name="EVA"
+							length="2" xsi:type="EVAActivityType" evaCrewGroup="EVA_Crew_Group" />
 					</schedule>
 				</crewPerson>
-				<crewPerson name="Engineer 3" age="40" weight="79" sex="MALE">
+			</CrewGroup>
+			<CrewGroup moduleName="Labs_Group">
+				<potableWaterConsumer inputs="Potable_Water_Store"
+					desiredFlowRates="3" maxFlowRates="3">
+				</potableWaterConsumer>
+				<airConsumer inputs="Labs" desiredFlowRates="0"
+					maxFlowRates="0" />
+				<foodConsumer inputs="Food_Store" desiredFlowRates="5"
+					maxFlowRates="5">
+				</foodConsumer>
+				<dirtyWaterProducer desiredFlowRates="100"
+					outputs="Dirty_Water_Store" maxFlowRates="100">
+				</dirtyWaterProducer>
+				<greyWaterProducer desiredFlowRates="100"
+					outputs="Grey_Water_Store" maxFlowRates="100" />
+				<airProducer desiredFlowRates="0" outputs="Labs"
+					maxFlowRates="0" />
+				<dryWasteProducer desiredFlowRates="10"
+					outputs="Dry_Waste_Store" maxFlowRates="10">
+				</dryWasteProducer>
+				<crewPerson age="35" name="Tim O'Connor" sex="MALE"
+					weight="72">
 					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="7.5"
-							intensity="2" />
-						<activity name="standing" length="3"
-							intensity="2.5" />
-						<activity name="walking" length="3"
-							intensity="3" />
-						<activity name="work" length="2"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
+						<activity intensity="2" name="ruminating"
+							length="12" />
+						<activity intensity="0" name="sleep" length="8" />
+						<activity intensity="5" name="excercise"
+							length="2" />
 					</schedule>
 				</crewPerson>
-				<crewPerson name="Engineer 4" age="40" weight="63" sex="FEMALE">
+			</CrewGroup>
+			<CrewGroup moduleName="Maintenance_Group">
+				<potableWaterConsumer inputs="Potable_Water_Store"
+					desiredFlowRates="3" maxFlowRates="3">
+				</potableWaterConsumer>
+				<airConsumer inputs="Maintenance"
+					desiredFlowRates="0" maxFlowRates="0" />
+				<foodConsumer inputs="Food_Store" desiredFlowRates="5"
+					maxFlowRates="5">
+				</foodConsumer>
+				<dirtyWaterProducer desiredFlowRates="100"
+					outputs="Dirty_Water_Store" maxFlowRates="100">
+				</dirtyWaterProducer>
+				<greyWaterProducer desiredFlowRates="100"
+					outputs="Grey_Water_Store" maxFlowRates="100" />
+				<airProducer desiredFlowRates="0"
+					outputs="Maintenance" maxFlowRates="0" />
+				<dryWasteProducer desiredFlowRates="10"
+					outputs="Dry_Waste_Store" maxFlowRates="10">
+				</dryWasteProducer>
+				<crewPerson age="35" name="Kane" sex="MALE"
+					weight="77">
 					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="7.5"
-							intensity="2" />
-						<activity name="standing" length="3"
-							intensity="2.5" />
-						<activity name="walking" length="3"
-							intensity="3" />
-						<activity name="work" length="2"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
+						<activity intensity="2" name="ruminating"
+							length="12" />
+						<activity intensity="0" name="sleep" length="8" />
+						<activity intensity="5" name="excercise"
+							length="2" />
 					</schedule>
 				</crewPerson>
-				<crewPerson name="Engineer 5" age="40" weight="79" sex="MALE">
-					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="7.5"
-							intensity="2" />
-						<activity name="standing" length="3"
-							intensity="2.5" />
-						<activity name="walking" length="3"
-							intensity="3" />
-						<activity name="work" length="2"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
-					</schedule>
-				</crewPerson>
-				<crewPerson name="Engineer 6" age="40" weight="63" sex="FEMALE">
-					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="7.5"
-							intensity="2" />
-						<activity name="standing" length="3"
-							intensity="2.5" />
-						<activity name="walking" length="3"
-							intensity="3" />
-						<activity name="work" length="2"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
-					</schedule>
-				</crewPerson>
-				<crewPerson name="Scientist 1" age="40" weight="63" sex="FEMALE">
-					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="11"
-							intensity="2" />
-						<activity name="standing" length="2"
-							intensity="2.5" />
-						<activity name="walking" length="2"
-							intensity="3" />
-						<activity name="work" length="0.5"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
-					</schedule>
-				</crewPerson>
-				<crewPerson name="Scientist 2" age="40" weight="79" sex="MALE">
-					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="11"
-							intensity="2" />
-						<activity name="standing" length="2"
-							intensity="2.5" />
-						<activity name="walking" length="2"
-							intensity="3" />
-						<activity name="work" length="0.5"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
-					</schedule>
-				</crewPerson>
-				<crewPerson name="Scientist 3" age="40" weight="63" sex="FEMALE">
-					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="11"
-							intensity="2" />
-						<activity name="standing" length="2"
-							intensity="2.5" />
-						<activity name="walking" length="2"
-							intensity="3" />
-						<activity name="work" length="0.5"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
-					</schedule>
-				</crewPerson>
-				<crewPerson name="Scientist 4" age="40" weight="79" sex="MALE">
-					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="11"
-							intensity="2" />
-						<activity name="standing" length="2"
-							intensity="2.5" />
-						<activity name="walking" length="2"
-							intensity="3" />
-						<activity name="work" length="0.5"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
-					</schedule>
-				</crewPerson>
-			<crewPerson name="Scientist 5" age="40" weight="63" sex="FEMALE">
-					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="11"
-							intensity="2" />
-						<activity name="standing" length="2"
-							intensity="2.5" />
-						<activity name="walking" length="2"
-							intensity="3" />
-						<activity name="work" length="0.5"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
-					</schedule>
-				</crewPerson>
-				<crewPerson name="Scientist 6" age="40" weight="79" sex="MALE">
-					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="11"
-							intensity="2" />
-						<activity name="standing" length="2"
-							intensity="2.5" />
-						<activity name="walking" length="2"
-							intensity="3" />
-						<activity name="work" length="0.5"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
-					</schedule>
-				</crewPerson>
-				<crewPerson name="Commander" age="40" weight="63" sex="FEMALE">
-					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="11"
-							intensity="2" />
-						<activity name="standing" length="2"
-							intensity="2.5" />
-						<activity name="walking" length="2"
-							intensity="3" />
-						<activity name="work" length="0.5"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
-					</schedule>
-				</crewPerson>
-				<crewPerson name="Scientist 7" age="40" weight="79" sex="MALE">
-					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="11"
-							intensity="2" />
-						<activity name="standing" length="2"
-							intensity="2.5" />
-						<activity name="walking" length="2"
-							intensity="3" />
-						<activity name="work" length="0.5"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
-					</schedule>
-				</crewPerson>
-				<crewPerson name="Builder 1" age="40" weight="79" sex="MALE">
-					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="5.5"
-							intensity="2" />
-						<activity name="standing" length="3"
-							intensity="2.5" />
-						<activity name="walking" length="3"
-							intensity="3" />
-						<activity name="work" length="4"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
-					</schedule>
-				</crewPerson>
-				<crewPerson name="Builder 2" age="40" weight="63" sex="FEMALE">
-					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="5.5"
-							intensity="2" />
-						<activity name="standing" length="3"
-							intensity="2.5" />
-						<activity name="walking" length="3"
-							intensity="3" />
-						<activity name="work" length="4"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
-					</schedule>
-				</crewPerson>
-				<crewPerson name="Builder 3" age="40" weight="79" sex="MALE">
-					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="5.5"
-							intensity="2" />
-						<activity name="standing" length="3"
-							intensity="2.5" />
-						<activity name="walking" length="3"
-							intensity="3" />
-						<activity name="work" length="4"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
-					</schedule>
-				</crewPerson>
-				<crewPerson name="Builder 4" age="40" weight="63" sex="FEMALE">
-					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="5.5"
-							intensity="2" />
-						<activity name="standing" length="3"
-							intensity="2.5" />
-						<activity name="walking" length="3"
-							intensity="3" />
-						<activity name="work" length="4"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
-					</schedule>
-				</crewPerson>
-				<crewPerson name="Builder 5" age="40" weight="79" sex="MALE">
-					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="5.5"
-							intensity="2" />
-						<activity name="standing" length="3"
-							intensity="2.5" />
-						<activity name="walking" length="3"
-							intensity="3" />
-						<activity name="work" length="4"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
-					</schedule>
-				</crewPerson>
-				<crewPerson name="Builder 6" age="40" weight="63" sex="FEMALE">
-					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="5.5"
-							intensity="2" />
-						<activity name="standing" length="3"
-							intensity="2.5" />
-						<activity name="walking" length="3"
-							intensity="3" />
-						<activity name="work" length="4"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
-					</schedule>
-				</crewPerson>
-				<crewPerson name="Farmer 1" age="40" weight="63" sex="FEMALE">
-					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="6.5"
-							intensity="2" />
-						<activity name="standing" length="3"
-							intensity="2.5" />
-						<activity name="walking" length="4"
-							intensity="3" />
-						<activity name="work" length="2"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
-					</schedule>
-				</crewPerson>
-				<crewPerson name="Farmer 2" age="40" weight="79" sex="MALE">
-					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="6.5"
-							intensity="2" />
-						<activity name="standing" length="3"
-							intensity="2.5" />
-						<activity name="walking" length="4"
-							intensity="3" />
-						<activity name="work" length="2"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
-					</schedule>
-				</crewPerson>
-				<crewPerson name="Farmer 3" age="40" weight="63" sex="FEMALE">
-					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="6.5"
-							intensity="2" />
-						<activity name="standing" length="3"
-							intensity="2.5" />
-						<activity name="walking" length="4"
-							intensity="3" />
-						<activity name="work" length="2"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
-					</schedule>
-				</crewPerson>
-				<crewPerson name="Farmer 4" age="40" weight="79" sex="MALE">
-					<schedule>
-						<activity name="sleep" length="8" intensity="1" />
-						<activity name="sitting" length="6.5"
-							intensity="2" />
-						<activity name="standing" length="3"
-							intensity="2.5" />
-						<activity name="walking" length="4"
-							intensity="3" />
-						<activity name="work" length="2"
-							intensity="4" />
-						<activity name="exercise" length="0.5"
-							intensity="5" />
-					</schedule>
-				</crewPerson>
+			</CrewGroup>
+			<CrewGroup moduleName="EVA_Crew_Group">
+				<potableWaterConsumer inputs="Potable_Water_Store"
+					desiredFlowRates="3" maxFlowRates="3">
+				</potableWaterConsumer>
+				<airConsumer inputs="EVA_Environment"
+					desiredFlowRates="0" maxFlowRates="0" />
+				<foodConsumer inputs="Food_Store" desiredFlowRates="5"
+					maxFlowRates="5">
+				</foodConsumer>
+				<dirtyWaterProducer desiredFlowRates="100"
+					outputs="Dirty_Water_Store" maxFlowRates="100">
+				</dirtyWaterProducer>
+				<greyWaterProducer desiredFlowRates="100"
+					outputs="Grey_Water_Store" maxFlowRates="100" />
+				<airProducer desiredFlowRates="0"
+					outputs="EVA_Environment" maxFlowRates="0" />
+				<dryWasteProducer desiredFlowRates="10"
+					outputs="Dry_Waste_Store" maxFlowRates="10">
+				</dryWasteProducer>
 			</CrewGroup>
 		</crew>
 	</SimBioModules>
@@ -721,219 +488,4 @@
 			</PowerInFlowRateActuator>
 		</power>
 	</Actuators>
-</biosim>
-
-
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="../../style/table.xsl"?>
-<biosim xmlns="http://www.traclabs.com/biosim"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.traclabs.com/biosim ../../schema/BiosimInitSchema.xsd">
-	<Globals driverStutterLength="500" crewsToWatch="Crew_Quarters_Group" runTillCrewDeath="false"  tickLength="1" startPaused="false"/>
-	<SimBioModules>
-		<environment>
-			<SimEnvironment moduleName="Crew_Quarters"
-				initialVolume="2700000">
-				<percentageInitialization waterPercentage="0.01"
-					nitrogenPercentage="0.659" otherPercentage="0.001"
-					o2Percentage="0.33" totalPressure="55" co2Percentage="0" />
-			</SimEnvironment>
-			<SimEnvironment moduleName="Galley" initialVolume="2700000">
-				<percentageInitialization waterPercentage="0.01"
-					nitrogenPercentage="0.659" otherPercentage="0.001"
-					o2Percentage="0.33" totalPressure="55" co2Percentage="0" />
-			</SimEnvironment>
-			<SimEnvironment moduleName="Labs" initialVolume="1900000"
-				airlockVolume="80000">
-				<percentageInitialization waterPercentage="0.01"
-					nitrogenPercentage="0.659" otherPercentage="0.001"
-					o2Percentage="0.33" totalPressure="55" co2Percentage="0" />
-			</SimEnvironment>
-			<SimEnvironment moduleName="Maintenance"
-				initialVolume="19000" airlockVolume="800000">
-				<percentageInitialization waterPercentage="0.01"
-					nitrogenPercentage="0.659" otherPercentage="0.001"
-					o2Percentage="0.33" totalPressure="55" co2Percentage="0" />
-			</SimEnvironment>
-			<SimEnvironment moduleName="EVA_Environment" initialVolume="2700000">
-				<percentageInitialization waterPercentage="0"
-					nitrogenPercentage="0.659" otherPercentage="0.001"
-					o2Percentage="0.33" totalPressure="55" co2Percentage="0" />
-			</SimEnvironment>
-			<Dehumidifier moduleName="Main_Dehumidifier">
-				<airConsumer inputs="Maintenance"
-					desiredFlowRates="1000" maxFlowRates="1000"></airConsumer>
-				<dirtyWaterProducer desiredFlowRates="1000"
-					outputs="Dirty_Water_Store" maxFlowRates="1000" />
-			</Dehumidifier>
-			<Dehumidifier moduleName="Backup_Dehumidifier">
-				<airConsumer inputs="Labs" desiredFlowRates="1000"
-					maxFlowRates="1000"></airConsumer>
-				<dirtyWaterProducer desiredFlowRates="1000"
-					outputs="Dirty_Water_Store" maxFlowRates="1000" />
-			</Dehumidifier>
-			<Fan moduleName="Maintenance_to_Crew_Fan">
-				<airConsumer inputs="Maintenance"
-					desiredFlowRates="1000" maxFlowRates="1000" />
-				<powerConsumer inputs="Fan_Battery" desiredFlowRates="50"
-					maxFlowRates="50"></powerConsumer>
-				<airProducer desiredFlowRates="1000"
-					outputs="Crew_Quarters" maxFlowRates="1000" ></airProducer>
-			</Fan>
-			<Fan moduleName="Crew_to_Maintenance_Fan">
-				<airConsumer inputs="Crew_Quarters"
-					desiredFlowRates="1000" maxFlowRates="1000" />
-				<powerConsumer inputs="General_Power_Store"
-					desiredFlowRates="50" maxFlowRates="50" ></powerConsumer>
-				<airProducer desiredFlowRates="1000"
-					outputs="Maintenance" maxFlowRates="1000" ></airProducer>
-			</Fan>
-			<Fan moduleName="Crew_to_Galley_Fan">
-				<airConsumer inputs="Crew_Quarters"
-					desiredFlowRates="1000" maxFlowRates="1000" />
-				<powerConsumer inputs="General_Power_Store"
-					desiredFlowRates="50" maxFlowRates="50" />
-				<airProducer desiredFlowRates="1000" outputs="Galley"
-					maxFlowRates="1000" />
-			</Fan>
-			<Fan moduleName="Galley_to_Crew_Fan">
-				<airConsumer inputs="Galley" desiredFlowRates="1000"
-					maxFlowRates="1000" />
-				<powerConsumer inputs="General_Power_Store"
-					desiredFlowRates="50" maxFlowRates="50" />
-				<airProducer desiredFlowRates="1000"
-					outputs="Crew_Quarters" maxFlowRates="1000" />
-			</Fan>
-			<Fan moduleName="Galley_to_Labs_Fan">
-				<airConsumer inputs="Galley" desiredFlowRates="1000"
-					maxFlowRates="1000" />
-				<powerConsumer inputs="General_Power_Store"
-					desiredFlowRates="50" maxFlowRates="50" />
-				<airProducer desiredFlowRates="1000" outputs="Labs"
-					maxFlowRates="1000" ></airProducer>
-			</Fan>
-			<Fan moduleName="Labs_to_Galley_Fan">
-				<airConsumer inputs="Labs" desiredFlowRates="1000"
-					maxFlowRates="1000" />
-				<powerConsumer inputs="General_Power_Store"
-					desiredFlowRates="50" maxFlowRates="50" />
-				<airProducer desiredFlowRates="1000" outputs="Galley"
-					maxFlowRates="1000" />
-			</Fan>
-		</environment>
-		<air>
-			<MethaneStore capacity="0" moduleName="MethaneStore" level="0"/>
-			<NitrogenStore capacity="0" moduleName="NitrogenStore" level="0"/>
-			<CO2Store capacity="1000" moduleName="CO2_Store" level="0"/>
-			<H2Store capacity="10000" moduleName="H2_Store" level="0"/>
-			<O2Store capacity="10000" moduleName="O2_Store" level="1000"/>
-			<CDRS moduleName="CDRS">
-				<normalStochasticFilter deviation="0.005"/>
-				<powerConsumer inputs="CDRS_Air_Inlet_Power_Store CDRS_Air_Return_Power_Store CDRS_CO2_Isolation_Power_Store CDRS_CO2_Vent_Power_Store CDRS_Primary_Heater_Power_Store CDRS_Secondary_Heater_Power_Store CDRS_Power_Store General_Power_Store General_Power_Store" desiredFlowRates="100 100 100 100 100 100 100 100 100" maxFlowRates="100 100 100 100 100 100 100 100 100"/>
-				<greyWaterConsumer inputs="Grey_Water_Store" desiredFlowRates="10" maxFlowRates="10"/>
-				<greyWaterProducer outputs="Grey_Water_Store" desiredFlowRates="10" maxFlowRates="10"/>
-				<airConsumer inputs="Crew_Quarters" desiredFlowRates="1000" maxFlowRates="1000"/>
-				<airProducer outputs="Crew_Quarters" desiredFlowRates="1000" maxFlowRates="1000"/>
-				<CO2Producer outputs="CO2_Store" desiredFlowRates="1000" maxFlowRates="1000"/>
-			</CDRS>
-			<OGS moduleName="OGS">
-				<powerConsumer inputs="General_Power_Store" desiredFlowRates="1000" maxFlowRates="1000"/>
-				<potableWaterConsumer inputs="Potable_Water_Store" desiredFlowRates="10" maxFlowRates="10"/>
-				<O2Producer desiredFlowRates="1000" outputs="O2_Store" maxFlowRates="1000"/>
-				<H2Producer desiredFlowRates="1000" outputs="H2_Store" maxFlowRates="1000"/>
-			</OGS>
-		</air>
-		<water>
-			<PotableWaterStore capacity="10000" moduleName="Potable_Water_Store" level="10000"/>
-			<GreyWaterStore capacity="10000" moduleName="Grey_Water_Store" level="10000"/>
-			<DirtyWaterStore capacity="10000" moduleName="Dirty_Water_Store" level="0"/>
-		</water>
-		<power>
-			<PowerStore capacity="100000" moduleName="General_Power_Store" level="100000"/>
-			<PowerStore capacity="100" moduleName="CDRS_Air_Inlet_Power_Store" level="100"/>
-			<PowerStore capacity="100" moduleName="CDRS_Air_Return_Power_Store" level="100"/>
-			<PowerStore capacity="100" moduleName="CDRS_CO2_Isolation_Power_Store" level="100"/>
-			<PowerStore capacity="100" moduleName="CDRS_CO2_Vent_Power_Store" level="100"/>
-			<PowerStore capacity="100" moduleName="CDRS_Power_Store" level="100"/>
-			<PowerStore capacity="100" moduleName="CDRS_Primary_Heater_Power_Store" level="100"/>
-			<PowerStore capacity="100" moduleName="CDRS_Secondary_Heater_Power_Store" level="100"/>
-			<PowerPS moduleName="Nuclear_Source" generationType="NUCLEAR">
-				<powerProducer desiredFlowRates="3000" outputs="General_Power_Store" maxFlowRates="3000" />
-			</PowerPS>
-			<PowerStore capacity="100" moduleName="IATCS_SFCA_Power_Store" level="100"/>
-			<PowerStore capacity="100" moduleName="IATCS_PPA_Power_Store" level="100"/>
-			<PowerStore capacity="100" moduleName="IATCS_TWMV_Power_Store" level="100"/>
-			
-			<RPCM moduleName="Air_Inlet_RPCM">
-				<powerConsumer inputs="General_Power_Store" desiredFlowRates="100" maxFlowRates="100"/>
-				<powerProducer outputs="CDRS_Air_Inlet_Power_Store" desiredFlowRates="100" maxFlowRates="100"/>
-			</RPCM>
-			<RPCM moduleName="Air_Return_RPCM">
-				<powerConsumer inputs="General_Power_Store" desiredFlowRates="100" maxFlowRates="100"/>
-				<powerProducer outputs="CDRS_Air_Return_Power_Store" desiredFlowRates="100" maxFlowRates="100"/>
-			</RPCM>
-			<RPCM moduleName="CO2_Isolation_RPCM">
-				<powerConsumer inputs="General_Power_Store" desiredFlowRates="100" maxFlowRates="100"/>
-				<powerProducer outputs="CDRS_CO2_Isolation_Power_Store" desiredFlowRates="100" maxFlowRates="100"/>
-			</RPCM>
-			<RPCM moduleName="CO2_Vent_RPCM">
-				<powerConsumer inputs="General_Power_Store" desiredFlowRates="100" maxFlowRates="100"/>
-				<powerProducer outputs="CDRS_CO2_Vent_Power_Store" desiredFlowRates="100" maxFlowRates="100"/>
-			</RPCM>
-			<RPCM moduleName="CDRS_RPCM">
-				<powerConsumer inputs="General_Power_Store" desiredFlowRates="100" maxFlowRates="100"/>
-				<powerProducer outputs="CDRS_Power_Store" desiredFlowRates="100" maxFlowRates="100"/>
-			</RPCM>
-			<RPCM moduleName="Primary_Heater_RPCM">
-				<powerConsumer inputs="General_Power_Store" desiredFlowRates="100" maxFlowRates="100"/>
-				<powerProducer outputs="CDRS_Primary_Heater_Power_Store" desiredFlowRates="100" maxFlowRates="100"/>
-			</RPCM>
-			<RPCM moduleName="Secondary_Heater_RPCM">
-				<powerConsumer inputs="General_Power_Store" desiredFlowRates="100" maxFlowRates="100"/>
-				<powerProducer outputs="CDRS_Secondary_Heater_Power_Store" desiredFlowRates="100" maxFlowRates="100"/>
-			</RPCM>
-			
-			<RPCM moduleName="IATCS_SFCA_RPCM">
-				<powerConsumer inputs="General_Power_Store" desiredFlowRates="100" maxFlowRates="100"/>
-				<powerProducer outputs="IATCS_SFCA_Power_Store" desiredFlowRates="100" maxFlowRates="100"/>
-			</RPCM>
-			<RPCM moduleName="IATCS_PPA_RPCM">
-				<powerConsumer inputs="General_Power_Store" desiredFlowRates="100" maxFlowRates="100"/>
-				<powerProducer outputs="IATCS_PPA_Power_Store" desiredFlowRates="100" maxFlowRates="100"/>
-			</RPCM>
-			<RPCM moduleName="IATCS_TWMV_RPCM">
-				<powerConsumer inputs="General_Power_Store" desiredFlowRates="100" maxFlowRates="100"/>
-				<powerProducer outputs="IATCS_TWMV_Power_Store" desiredFlowRates="100" maxFlowRates="100"/>
-			</RPCM>
-		</power>
-		<food>
-			<FoodStore capacity="10000" level="10000" moduleName="Food_Store"/>
-		</food>
-		<thermal>
-			<IATCS moduleName="IATCS">
-				<normalStochasticFilter deviation="0.005"/>
-				<powerConsumer inputs="IATCS_SFCA_Power_Store IATCS_PPA_Power_Store IATCS_TWMV_Power_Store" desiredFlowRates="100 100 100" maxFlowRates="100 100 100"/>
-				<greyWaterConsumer inputs="Grey_Water_Store" desiredFlowRates="10" maxFlowRates="10"/>
-				<greyWaterProducer outputs="Grey_Water_Store" desiredFlowRates="10" maxFlowRates="10"/>
-			</IATCS>
-		</thermal>
-		<waste>
-			<DryWasteStore capacity="1000000" moduleName="Dry_Waste_Store" level="0"/>
-		</waste>
-		
-	</SimBioModules>
-	<Sensors>
-		<air>
-			<CO2OutFlowRateSensor input="CDRS" moduleName="CDRS_CO2_Effluent_Sensor" index="0"/>
-		</air>
-		<environment>
-			<AirInFlowRateSensor input="CDRS" moduleName="CDRS_Air_Influent_Sensor" index="0"/>
-			<AirOutFlowRateSensor input="CDRS" moduleName="CDRS_Air_Effluent_Sensor" index="0"/>
-			<GasConcentrationSensor input="Crew_Quarters" moduleName="Co2GasConcentrationSensor" gasType="CO2"/>
-		</environment>
-		<water>
-			<GreyWaterInFlowRateSensor input="CDRS" moduleName="CDRS_Grey_Water_Influent_Sensor" index="0"/>
-			<GreyWaterOutFlowRateSensor input="CDRS" moduleName="CDRS_Grey_Water_Effluent_Sensor" index="0"/>
-		</water>
-	</Sensors>
 </biosim>
