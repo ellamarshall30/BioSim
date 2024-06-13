@@ -123,11 +123,64 @@
 					outputs="Crew_Quarters" maxFlowRates="0" />
 				<dryWasteProducer desiredFlowRates="10"
 					outputs="Dry_Waste_Store" maxFlowRates="10"/>
-				<crewPerson age="34" name="Taylor Swift" sex="FEMALE" weight="65">
+				<crewPerson name="Engineer 1" age="40" weight="79" sex="MALE">
 					<schedule>
-						<activity intensity="2" name="leisure" length="12" />
-						<activity intensity="0" name="sleep" length="8" />
-						<activity intensity="5" name="excercise" length="2" />
+						<activity name="sleep" length="8" intensity="1" />
+						<activity name="sitting" length="7.5"
+							intensity="2" />
+						<activity name="standing" length="3"
+							intensity="2.5" />
+						<activity name="walking" length="3"
+							intensity="3" />
+						<activity name="work" length="2"
+							intensity="4" />
+						<activity name="exercise" length="0.5"
+							intensity="5" />
+					</schedule>
+				</crewPerson>
+				<crewPerson name="Engineer 2" age="40" weight="63" sex="FEMALE">
+					<schedule>
+						<activity name="sleep" length="8" intensity="1" />
+						<activity name="sitting" length="7.5"
+							intensity="2" />
+						<activity name="standing" length="3"
+							intensity="2.5" />
+						<activity name="walking" length="3"
+							intensity="3" />
+						<activity name="work" length="2"
+							intensity="4" />
+						<activity name="exercise" length="0.5"
+							intensity="5" />
+					</schedule>
+				</crewPerson>
+				<crewPerson name="Engineer 3" age="40" weight="79" sex="MALE">
+					<schedule>
+						<activity name="sleep" length="8" intensity="1" />
+						<activity name="sitting" length="7.5"
+							intensity="2" />
+						<activity name="standing" length="3"
+							intensity="2.5" />
+						<activity name="walking" length="3"
+							intensity="3" />
+						<activity name="work" length="2"
+							intensity="4" />
+						<activity name="exercise" length="0.5"
+							intensity="5" />
+					</schedule>
+				</crewPerson>
+				<crewPerson name="Engineer 4" age="40" weight="63" sex="FEMALE">
+					<schedule>
+						<activity name="sleep" length="8" intensity="1" />
+						<activity name="sitting" length="7.5"
+							intensity="2" />
+						<activity name="standing" length="3"
+							intensity="2.5" />
+						<activity name="walking" length="3"
+							intensity="3" />
+						<activity name="work" length="2"
+							intensity="4" />
+						<activity name="exercise" length="0.5"
+							intensity="5" />
 					</schedule>
 				</crewPerson>
 			</CrewGroup>
