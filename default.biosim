@@ -22,6 +22,7 @@
 				<airConsumer inputs="Crew_Quarters" desiredFlowRates="1000" maxFlowRates="1000"/>
 				<airProducer outputs="Crew_Quarters" desiredFlowRates="1000" maxFlowRates="1000"/>
 				<CO2Consumer inputs="CO2_Store" desiredFlowRates="10000" maxFlowRates="10000"/>
+				<CO2Producer inputs="CO2_Vent" desiredFlowRates="10000" maxFlowRates="10000"/>
 			</CDRS>
 			
 			<OGS moduleName="OGS">
